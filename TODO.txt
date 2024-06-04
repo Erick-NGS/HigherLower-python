@@ -1,0 +1,5 @@
+1.  Mensagem de saudação ao usuário com a logo do jogo
+2.  Comparação de ativo A com ativo B (Aleatório)
+3.  Pergunta do jogo comparando os 2 ativos
+4.  Caso certo, mensagem de acerto, mostrando a série de acerto. Caso erro, mensagem indicando erro e fim de jogo, mostrando a série de acertos
+5.  Continuação de comparação entre o ativo B da última pergunta, agora A, com novo ativo aleatório
