@@ -20,15 +20,14 @@ def check_guess(guess, a_followers, b_followers):
 print(art.logo)
 score = 0
 game_over = False
-
-# os.system('cls||clear')
+account_b = random.choice(data)
 
 while not game_over:
     # Selecting 2 random assets from 'game_data.data'
-    account_a = random.choice(data)
+    account_a = account_b
     account_b = random.choice(data)
     # Checking to make sure that both accounts are different from each other
-    if account_a == account_b:
+    while account_a == account_b:
         account_b = random.choice(data)
 
     print(f"Compare A: {format_data(account_a)}")
@@ -38,8 +37,11 @@ while not game_over:
     guess = input("Who has more followers? Type 'A' or 'B': ").lower()
     a_follower_count = account_a["follower_count"]
     b_follower_count = account_b["follower_count"]
-
     is_right = check_guess(guess, a_follower_count, b_follower_count)
+
+    # Clear screen
+    os.system('cls||clear')
+    print(art.logo)
 
     # Printing if the user got his answer right nad keeping a tally of his score
     if is_right:
