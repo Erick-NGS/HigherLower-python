@@ -20,6 +20,7 @@ def check_guess(guess, a_followers, b_followers):
 
 # Printin game logo
 print(art.logo)
+score = 0
 
 # os.system('cls||clear')
 
@@ -39,3 +40,10 @@ a_follower_count = account_a["follower_count"]
 b_follower_count = account_b["follower_count"]
 
 is_right = check_guess(guess, a_follower_count, b_follower_count)
+
+# Printing if the user got his answer right nad keeping a tally of his score
+if is_right:
+    score += 1
+    print(f"You are correct! Current score: {score}")
+else:
+    print(f"Sorry, you are wrong! Final score: {score}")
