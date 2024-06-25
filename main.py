@@ -22,4 +22,4 @@ if account_a == account_b:
 
 print(f"Compare A: {format_data(account_a)}")
 print(art.vs)
-print(f"Compare B: {format_data(account_b)}")
+print(f"Against B: {format_data(account_b)}")
